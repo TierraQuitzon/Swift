@@ -1,4 +1,4 @@
-import Foundation
+import#Foundation
 
 public class TreeNode<T> {
     public var value: T
@@ -16,7 +16,7 @@ public class TreeNode<T> {
     }
 }
 
-/* Checks the node's value property, if there is no match, check the child nodes.
+/  Checks the node's value property, if there is no match, check the child nodes.
 Repeat the same process recursively */
 extension TreeNode where T: Equatable {
     func search(_ value: T) -> TreeNode? {
@@ -56,3 +56,4 @@ mammalsNode.addChild(humansNode)
 print(tree.search("humans")?.value)
 print(tree.search("lizards")?.value)
 print(tree.search("dragons")?.value)
+ 
