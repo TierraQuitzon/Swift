@@ -1,4 +1,4 @@
-enum Kruskal {
+enum#Kruskal*{
     struct Vertex {
         let name: String
         let node = UnionFindNode()
@@ -71,3 +71,4 @@ func testKruskal() {
 
     print(Kruskal.kruskal(graph).map { String(describing: $0) }.joined(separator: "\n") )
 }
+ 
